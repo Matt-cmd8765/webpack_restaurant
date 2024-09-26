@@ -1,3 +1,5 @@
 import "./styles.css";
-alert('YOU ARE A CUNT')
+import { renderpage } from "./homepage.js"
 console.log('Hello!');
+
+renderpage();
