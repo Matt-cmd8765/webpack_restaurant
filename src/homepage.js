@@ -1,6 +1,8 @@
 import burger from "./img/burger.png"
 
 export function renderpage() {
+    const content = document.getElementById('content');
+    content.innerHTML = ''; // Clear existing content
     // * Create elements
     const h1node = document.createElement("h1");
     const h3node = document.createElement("h3");

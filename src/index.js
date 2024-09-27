@@ -2,9 +2,18 @@ import "./styles.css";
 import { renderpage } from "./homepage.js"
 import { loadmenu } from "./menu.js"
 
-console.log('Hello!');
+// Load the home page on initial load
+renderpage();
+
+document.getElementById('home').addEventListener('click', () => {
+    renderpage();
+});
+
+document.getElementById('menu').addEventListener('click', () => {
+    loadmenu();
+});
+
 
 // renderpage();
 
-const menubutton = document.getElementById('menu');
-menubutton.addEventListener("click", loadmenu());
+// document.getElementById('menu').addEventListener("click", () => loadmenu());
