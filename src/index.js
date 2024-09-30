@@ -1,6 +1,7 @@
 import "./styles.css";
 import { renderpage } from "./homepage.js"
 import { loadmenu } from "./menu.js"
+import { menuitem } from "./menu.js";
 
 // Load the home page on initial load
 renderpage();
@@ -12,8 +13,3 @@ document.getElementById('home').addEventListener('click', () => {
 document.getElementById('menu').addEventListener('click', () => {
     loadmenu();
 });
-
-
-// renderpage();
-
-// document.getElementById('menu').addEventListener("click", () => loadmenu());
