@@ -1,4 +1,4 @@
-import burger from "./img/burger.png"
+import burger from "./img/Krabby_Patty.png"
 
 export function renderpage() {
     const content = document.getElementById('content');
@@ -15,11 +15,15 @@ export function renderpage() {
     const h1textnode = document.createTextNode("The Krusty Krab");
     const ptextnode = document.createTextNode("Official Website of the Krusty Krab! Best Place for a burger!"); 
     
-    // * append childs to divs 
+    // * append textnodes to elements 
     h1node.appendChild(h1textnode);
-    document.getElementById("content").appendChild(h1node);
-    document.getElementById("content").appendChild(divnode);
-    document.getElementById("content").appendChild(img);
     pnode.appendChild(ptextnode);
+
+    // * Append elements do div
+    document.getElementById("content").appendChild(divnode);
+    divnode.appendChild(h1node);
     divnode.appendChild(pnode);
+    divnode.appendChild(img);
+
+    divnode.classList.add('homepage_div')
 }

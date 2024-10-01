@@ -1,5 +1,6 @@
 body {
   background-color: #fff360;
+  font-family: 'Krabby Patty', sans-serif;
 }
 
 .outerdiv {
@@ -7,7 +8,9 @@ body {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   justify-content: center;
-  column-gap: 50px;
+  justify-items: center;
+  column-gap: 5%;
+  row-gap: 5%;
 }
 
 img {
@@ -29,8 +32,8 @@ button {
   padding: 15px 32px;
   border-radius: 8px;
   text-align: center;
+  font-family: 'Krabby Patty', sans-serif;
   font-weight: bolder;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   transition-duration: 0.4s;
@@ -41,3 +44,33 @@ button:hover {
   cursor: pointer;
   background-color: rgb(230, 58, 58, 0.9);
 }
+
+.menu_header {
+  color: rgb(230,58,58);
+  display: grid;
+  justify-items: center;
+}
+
+.menu_item {
+  width: 85%;
+  border: solid rgb(180,122,61) 2px;
+  border-radius: 8px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.homepage_div {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+p {
+  font-size: 25px;
+}
+

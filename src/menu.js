@@ -49,14 +49,14 @@ menuarray.push(krabbypatty, jellypatty, nasty_patty, pretty_patty);
 function listmenu(item) {
     const outerdiv = document.getElementsByClassName('outerdiv');
     const div = document.createElement('div');
-    const h3 = document.createElement('h3'); // for the menu item header
+    const h2 = document.createElement('h2'); // for the menu item header
     const img = document.createElement("img"); // burger pic
     const price = document.createElement('p'); // price
     const description = document.createElement('p'); // menuitem description
 
-    const h3text = document.createTextNode(`${item.item}`);
-    h3.appendChild(h3text);
-    div.appendChild(h3);
+    const h2text = document.createTextNode(`${item.item}`);
+    h2.appendChild(h2text);
+    div.appendChild(h2);
 
     img.src = item.pic;
     div.appendChild(img);
@@ -77,6 +77,7 @@ export function loadmenu() {
     const content = document.getElementById('content');
     content.innerHTML = ''; // Clear existing content
     const header = document.createElement('h1');
+    header.classList.add('menu_header');
     const outerdiv = document.createElement('div');
     const headertext = document.createTextNode('THE MENU');
     header.appendChild(headertext);
