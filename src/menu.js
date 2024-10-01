@@ -47,7 +47,6 @@ let pretty_patty = new menuitem(
 menuarray.push(krabbypatty, jellypatty, nasty_patty, pretty_patty);
 
 function listmenu(item) {
-    const content = document.getElementById('content');
     const outerdiv = document.getElementsByClassName('outerdiv');
     const div = document.createElement('div');
     const h3 = document.createElement('h3'); // for the menu item header

@@ -2,6 +2,42 @@ body {
   background-color: #fff360;
 }
 
-#content {
+.outerdiv {
   display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  column-gap: 50px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  column-gap: 20px;
+}
+
+button {
+  background: rgb(180,122,61);
+  color: black;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  width: 20em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(230, 58, 58, 0.9);
 }
